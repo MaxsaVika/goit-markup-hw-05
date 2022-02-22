@@ -107,7 +107,7 @@ img {
 .nav-link {
   display: block;
   padding-top: 32px;
-  padding-bottom: 32px;
+  /* padding-bottom: 32px; */
 
   font-weight: 500;
   font-size: 14px;
@@ -127,6 +127,18 @@ img {
 
 .nav-link.current {
   color: var(--accent-color);
+}
+
+.current::after{
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin-top: 28px;
+  
+  content: "";
+  background: var(--accent-color);
+  border-radius: 2px;
+  
 }
 
 /* Телефон и почта */
